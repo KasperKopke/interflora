@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li:last-child {
+  margin-left: 400px;
+}
+nav ul li:first-child {
+  margin-right: 120px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.7em 1.8em;
+  font-size: 16px;
+  border-radius: 13px;
+  font-weight: 600;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.658);
+}
+nav ul li:last-child a {
+  padding: 1em 1.8em;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: black;
+  color: #d1ad53;
+  border-radius: 13px;
+
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+header {
+  background-image: url(/Billeder/Header/Hero_jul_3_1.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 13px;
+  padding: 50px;
+  max-width: 50%;
+  background-color: rgba(255, 255, 255, 0.815);
+  margin-bottom: 140px;
+}
+h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.header-sec p {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.a-btn {
+  background-color: black;
+  text-decoration: none;
+  color: #d1ad53;
+  padding: 1em 1.8em;
+  font-size: 16px;
+  border-radius: 13px;
+  text-transform: uppercase;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 600;
+}
+.julehilsner-wrapper {
+  display: flex;
+  padding: 60px;
+  justify-content: center;
+  align-items: center;
+}
+.jule-left {
+  display: flex;
+  align-items: flex-start;
+  max-width: 50%;
+  flex-direction: column;
+
+  gap: 20px;
+}
+.jule-left h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  max-width: 90%;
+  font-size: 63px;
+}
+.jule-left p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  max-width: 50%;
+  font-size: 20px;
+}
+.jule-right {
+  max-width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "box1 box1"
+    "box2 box3";
+  gap: 10px;
+}
+.box1 {
+  grid-area: box1;
+}
+.box2 {
+  grid-area: box2;
+}
+.box3 {
+  grid-area: box3;
+}
+.box1 img {
+  width: 100%;
+  height: auto;
+}
+.jule-right-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+.historie {
+  background-color: #191919b2;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+.historie-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  padding: 80px;
+}
+.historie-left {
+  max-width: 60%;
+  padding: 0 8%;
+}
+.historie-left p {
+  font-size: 20px;
+}
+.historie-left h3 {
+  font-size: 25px;
+  max-width: 80%;
+}
+.historie-right p {
+  font-size: 20px;
+}
+.historie-right h3 {
+  font-size: 25px;
+  max-width: 80%;
+}
+.historie-right {
+  max-width: 50%;
+  padding: 0 8%;
+}
+.historie h2 {
+  font-size: 45px;
+  padding: 50px;
+}
+.blomstersoter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.blomstersoter h2 {
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+.blomstersoter p {
+  max-width: 40%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.blomstersoter-right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "blomst1 blomst2"
+    "blomst3 blomst4"
+    "blomst5 blomst6"
+    "blomst7 blomst8";
+  grid-gap: 15px;
+}
+.blomstersoter-wrapper {
+  display: flex;
+}
+.blomst1 {
+  grid-area: blomst1;
+}
+.blomst2 {
+  grid-area: blomst2;
+}
+.blomst3 {
+  grid-area: blomst3;
+}
+.blomst4 {
+  grid-area: blomst4;
+}
+.blomst5 {
+  grid-area: blomst5;
+}
+.blomst6 {
+  grid-area: blomst6;
+}
+.blomst7 {
+  grid-area: blomst7;
+}
+.blomst8 {
+  grid-area: blomst8;
+}
+.blomstersoter-right img {
+  width: 190px;
+}
+.blomstersoter-left img {
+  width: 818px;
+  margin-right: 20px;
+}
+.faquen {
+  background-color: #d1ad53;
+  padding: 5% 15%;
+}
+.faquen h2 {
+  text-align: center;
+  font-size: 45px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.active .tekstBox1 {
+  display: block;
+}
+.tekstBox1 {
+  display: none;
+  background-color: black;
+  color: white;
+}
+.rundtomalle {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.faq-box {
+  cursor: pointer;
+  min-width: 100%;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid white;
+}
+.heading button {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  border: 2px solid;
+  background-color: white;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.faq {
+  max-width: 100%;
+  min-width: 100%;
+  margin: 50px 0px;
+}
+.rundtomalle section.active {
+  background-color: black;
+  color: white;
+}
+.rundtomalle section {
+  padding: 20px;
+}
+.rundtomalle section.active .heading {
+  border-bottom: 2px solid #d1ad53;
+}
+#testt:hover {
+  background-color: black;
+  color: white;
+}
+.rundtomalle section.active .heading button {
+  background-color: #d1ad53;
+  border-color: white;
+}
