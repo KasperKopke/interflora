@@ -14,8 +14,13 @@
   </head>
   <body>
     <header>
+      
+      
       <nav>
+        <i onclick="burgerMenu()" class="fa-solid fa-bars"></i>
+        <i onclick="burgerMenu()" class="fa-solid fa-x"></i>
         <ul>
+          
           <li>
             <img src="/Billeder/Header/logo.png" alt="" />
           </li>
@@ -140,34 +145,36 @@
 
       <div class="blomstersoter-wrapper">
         <div class="blomstersoter-left">
-          <img src="/Billeder/Galleri/blomst6.jpg" alt="" />
+          <img id="largeImg" src="/Billeder/Galleri/blomst6.jpg" alt="" />
         </div>
         <div class="blomstersoter-right">
+          <div class="flowerss">
           <article class="blomst1">
-            <img src="/Billeder/Galleri/blomst6.jpg" alt="" />
+            <img class="thumbnail" src="/Billeder/Galleri/blomst6.jpg" alt="" />
           </article>
           <article class="blomst2">
-            <img src="/Billeder/Galleri/blomst1.jpg" alt="" />
+            <img  class="thumbnail"src="/Billeder/Galleri/blomst1.jpg" alt="" />
           </article>
           <article class="blomst3">
-            <img src="/Billeder/Galleri/blomst2.jpg" alt="" />
+            <img  class="thumbnail"src="/Billeder/Galleri/blomst2.jpg" alt="" />
           </article>
           <article class="blomst4">
-            <img src="/Billeder/Galleri/blomst3.jpg" alt="" />
+            <img class="thumbnail" src="/Billeder/Galleri/blomst3.jpg" alt="" />
           </article>
           <article class="blomst5">
-            <img src="/Billeder/Galleri/blomst4.jpg" alt="" />
+            <img  class="thumbnail"src="/Billeder/Galleri/blomst4.jpg" alt="" />
           </article>
           <article class="blomst6">
-            <img src="/Billeder/Galleri/blomst5.jpg" alt="" />
+            <img  class="thumbnail"src="/Billeder/Galleri/blomst5.jpg" alt="" />
           </article>
           <article class="blomst7">
-            <img src="/Billeder/Galleri/blomst7.jpg" alt="" />
+            <img  class="thumbnail"src="/Billeder/Galleri/blomst7.jpg" alt="" />
           </article>
           <article class="blomst8">
-            <img src="/Billeder/Galleri/blomst8.jpg" alt="" />
+            <img class="thumbnail" src="/Billeder/Galleri/blomst8.jpg" alt="" />
           </article>
         </div>
+      </div>
       </div>
     </section>
     <section class="faquen">
@@ -237,7 +244,7 @@
         <section id="testt">
           <article class="faq-box">
             <h3 class="heading">
-              Market Director <button id="testbtn">Vis Mere</button>
+              Kan jeg bestille uden at være logget ind? <button id="testbtn">Vis Mere</button>
             </h3>
   
             <article class="tekstBox1">
@@ -250,5 +257,69 @@
         
 </section>
 </section>
+<section class="forms">
+  <h2>Kontakt</h2>
+  <p>Har du spørgsmål er du altid velkommen til at kontakte os, og vi vil gøre vores bedste, for at hjælpe dig.</p>
+
+  <form id="formm" action="/" method="get" onsubmit="return(validate())">
+    <div class="error-message"><h3>Fix Following Errors:</h3></div>
+    <div class="formwrapper">
+    <div class="indputs">
+      <label for="name">
+        <input type="text" name="name" id="name" placeholder="Name" />
+      </label>
+      <label for="emne">
+        <input type="text" name="emne" id="emne" placeholder="Emne">
+      </label>
+      <label for="mail">
+        <input
+          type="email"
+          name="mail"
+          id="mail"
+          placeholder="Email Address"
+        />
+      </label>
+    </div>
+    <div class="right-fomr">
+    <textarea
+      name="textfield"
+      id="textfield"
+      cols="55"
+      rows="10"
+      placeholder="Din ansøgning"
+    ></textarea>
+  </div>
+</div>
+    <br />
+    <div class="submit">
+      <button class="submitbtn" type="submit">Send</button>
+    </div>
+  
+  </form>
+</section>
+
+<footer>
+  <div class="footer-wrapper">
+    <div class="footer-left">
+<h2>Interflora Danmark A/S</h2>
+<ul>
+<li>Park Allé</li>
+<li>2625 Vallensbæk</li>
+<li>Administration: 43 43 47 47</li>
+<li>E-mail: interflora@interflora.dk</li>
+
+</ul>
+    </div>
+    <div class="footer-right">
+<ul>
+  <li><a href="#"><i class="fa-brands fa-facebook"></a></i></li>
+  <li><a href="#"><i class="fa-brands fa-twitter"></a></i></li>
+  <li><a href="#"><i class="fa-brands fa-linkedin"></a></i></li>
+  <li><a href="#"><i class="fa-brands fa-youtube"></a></i></li>
+  <li><a href="#"><i class="fa-solid fa-phone"></a></i></li>
+</ul>
+    </div>
+  </div>
+</footer>
   </body>
 </html>

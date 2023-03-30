@@ -3,13 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
-ul {
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+nav ul {
   display: flex;
   gap: 20px;
   list-style-type: none;
-  padding: 20px;
-  justify-content: center;
   align-items: center;
+}
+nav {
+  margin-top: 20px;
 }
 nav ul li:last-child {
   margin-left: 400px;
@@ -24,7 +28,6 @@ nav ul li a {
   font-size: 16px;
   border-radius: 13px;
   font-weight: 600;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 nav ul li a:hover {
   background-color: rgba(0, 0, 0, 0.658);
@@ -36,14 +39,11 @@ nav ul li:last-child a {
   background-color: black;
   color: #d1ad53;
   border-radius: 13px;
-
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 header {
   background-image: url(/Billeder/Header/Hero_jul_3_1.jpg);
   background-size: cover;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
@@ -58,7 +58,6 @@ header {
   margin-bottom: 140px;
 }
 h1 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 50px;
   text-align: center;
   text-transform: uppercase;
@@ -68,7 +67,6 @@ h1 {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 20px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .a-btn {
   background-color: black;
@@ -78,7 +76,6 @@ h1 {
   font-size: 16px;
   border-radius: 13px;
   text-transform: uppercase;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 600;
 }
 .julehilsner-wrapper {
@@ -90,18 +87,14 @@ h1 {
 .jule-left {
   display: flex;
   align-items: flex-start;
-  max-width: 50%;
   flex-direction: column;
-
   gap: 20px;
 }
 .jule-left h2 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   max-width: 90%;
   font-size: 63px;
 }
 .jule-left p {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   max-width: 50%;
   font-size: 20px;
 }
@@ -127,21 +120,13 @@ h1 {
   width: 100%;
   height: auto;
 }
-.jule-right-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 100px;
-}
 .historie {
   background-color: #191919b2;
   color: white;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: center;
 }
 .historie-wrapper {
   display: flex;
-  justify-content: center;
   align-items: center;
   text-align: start;
   padding: 80px;
@@ -150,17 +135,10 @@ h1 {
   max-width: 60%;
   padding: 0 8%;
 }
-.historie-left p {
+.historie p {
   font-size: 20px;
 }
-.historie-left h3 {
-  font-size: 25px;
-  max-width: 80%;
-}
-.historie-right p {
-  font-size: 20px;
-}
-.historie-right h3 {
+.historie h3 {
   font-size: 25px;
   max-width: 80%;
 }
@@ -174,11 +152,9 @@ h1 {
 }
 .blomstersoter {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 60px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .blomstersoter h2 {
   font-size: 50px;
@@ -189,7 +165,7 @@ h1 {
   margin-bottom: 30px;
   text-align: center;
 }
-.blomstersoter-right {
+.flowerss {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
@@ -234,13 +210,12 @@ h1 {
   margin-right: 20px;
 }
 .faquen {
-  background-color: #d1ad53;
+  background-color: #d1ad538a;
   padding: 5% 15%;
 }
 .faquen h2 {
   text-align: center;
   font-size: 45px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .active .tekstBox1 {
   display: block;
@@ -259,13 +234,12 @@ h1 {
   cursor: pointer;
   min-width: 100%;
 }
-
 .heading {
   display: flex;
   justify-content: space-between;
   border-bottom: 2px solid white;
 }
-.heading button {
+#testbtn {
   text-decoration: none;
   color: black;
   padding: 10px 20px;
@@ -293,7 +267,270 @@ h1 {
   background-color: black;
   color: white;
 }
-.rundtomalle section.active .heading button {
+.rundtomalle section.active #testbtn {
   background-color: #d1ad53;
   border-color: white;
+}
+input {
+  border: 2px solid #3d3d3d;
+  outline: none;
+  min-height: 35px;
+  max-height: 35px;
+  min-width: 100%;
+  margin-bottom: 44.5px;
+}
+.submitbtn {
+  width: 100%;
+  font-size: 17px;
+  background-color: #3d3d3d;
+  color: white;
+  border: none;
+  min-height: 40px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.forms {
+  display: flex;
+  padding: 40px 480px;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  background-color: #d1ad53;
+}
+.forms p {
+  margin-bottom: 50px;
+}
+#textfield {
+  border: 2px solid black;
+  font-size: 16px;
+}
+.error-message {
+  display: none;
+  border: 2px solid red;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: red;
+}
+.error-message.show {
+  display: block;
+  max-width: 100%;
+}
+.error-message h3 {
+  font-size: 17px;
+  color: #333;
+  font-weight: 600;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #888;
+}
+.formwrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+footer {
+  padding: 50px 220px;
+  min-width: 100%;
+  background-color: black;
+  color: white;
+}
+.footer-wrapper {
+  display: flex;
+}
+.footer-left {
+  min-width: 50%;
+}
+.footer-left h2 {
+  font-size: 30px;
+}
+.footer-left ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style-type: none;
+  gap: 10px;
+}
+.footer-right {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  min-width: 50%;
+}
+.footer-right ul {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  align-items: center;
+}
+.fa-brands,
+.fa-phone {
+  font-size: 25px;
+  color: white;
+}
+
+.fa-bars {
+  display: none;
+}
+.fa-x {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 10%;
+  }
+
+  nav.active {
+    left: 0%;
+    transition: all 0.2s ease-in-out;
+  }
+
+  nav ul li a {
+    font-size: 30px;
+  }
+
+  nav ul li a:last-child {
+    font-size: 20px;
+  }
+
+  nav ul li img {
+    width: 180px;
+  }
+
+  nav {
+    position: fixed;
+    background-color: #d1ad53;
+    min-width: 100%;
+    min-height: 100vh;
+    margin-top: 0px;
+    left: -100%;
+    transition: all 0.2s ease-in-out;
+  }
+
+  nav ul li:last-child {
+    margin-left: 0px;
+  }
+  nav ul li:first-child {
+    margin-right: 0;
+  }
+
+  .header-sec {
+    max-width: 95%;
+    margin-top: 20px;
+  }
+  h1 {
+    font-size: 39px;
+  }
+  .header-sec p {
+    font-size: 20px;
+  }
+
+  .julehilsner-wrapper {
+    flex-direction: column;
+  }
+  .jule-left p {
+    max-width: 88%;
+    font-size: 20px;
+  }
+  .jule-left {
+    align-items: center;
+  }
+  .jule-right {
+    margin-top: 50px;
+    margin-right: 271px;
+  }
+  .historie-right {
+    max-width: 100%;
+    padding: 68px 0%;
+  }
+  .historie-left {
+    max-width: 100%;
+    padding: 0px 0%;
+  }
+  .historie-wrapper {
+    flex-direction: column;
+  }
+  .blomstersoter-left img {
+    width: 416px;
+  }
+  .blomstersoter-wrapper {
+    flex-direction: column;
+  }
+  .flowerss {
+    margin-top: 20px;
+    margin-left: 31px;
+  }
+  .blomstersoter-left {
+    margin-left: 32px;
+  }
+  .blomstersoter p {
+    max-width: 100%;
+  }
+  .forms {
+    padding: 0;
+  }
+  .formwrapper {
+    flex-direction: column;
+    gap: 0;
+  }
+  input {
+    min-width: 68%;
+    margin-bottom: 11.5px;
+    text-indent: 5px;
+  }
+  #textfield {
+    border: 2px solid black;
+    font-size: 16px;
+    max-width: 68%;
+  }
+  .submitbtn {
+    max-width: 68%;
+  }
+  .forms p {
+    padding: 12px;
+  }
+  .forms h2 {
+    margin-top: 20px;
+  }
+  .footer-right {
+    justify-content: flex-start;
+  }
+  .footer-wrapper {
+    flex-direction: column;
+  }
+  footer {
+    padding: 52px 59px;
+  }
+  .footer-right {
+    margin-top: 40px;
+  }
+
+  .fa-bars,
+  .fa-x {
+    display: inline;
+    position: fixed;
+    left: 15px;
+    top: 15px;
+    font-size: 40px;
+    z-index: 999;
+  }
+
+  .fa-x {
+    display: none;
+  }
+
+  nav.active .fa-bars {
+    display: none;
+  }
+
+  nav.active .fa-x {
+    display: block;
+  }
 }
