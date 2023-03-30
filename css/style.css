@@ -473,6 +473,7 @@ footer {
   }
   .flowerss {
     margin-top: 20px;
+    grid-template-columns: repeat(1, 1fr);
   }
   .blomstersoter-left {
     margin-left: 32px;
