@@ -444,7 +444,11 @@ footer {
   }
   .jule-right {
     margin-top: 50px;
-    margin-right: 271px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .historie-right {
     max-width: 100%;
@@ -458,7 +462,10 @@ footer {
     flex-direction: column;
   }
   .blomstersoter-left img {
-    width: 416px;
+    width: 349px;
+  }
+  .blomstersoter-right img {
+    width: 156px;
   }
   .blomstersoter-wrapper {
     flex-direction: column;
