@@ -475,6 +475,7 @@ footer {
     margin-top: 20px;
     max-width: fit-content;
     grid-template-columns: repeat(1, 1fr);
+    grid-gap: 4px;
   }
   .blomstersoter-left {
     margin-left: 32px;
