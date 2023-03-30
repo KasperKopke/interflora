@@ -466,13 +466,14 @@ footer {
     width: 326px;
   }
   .blomstersoter-right img {
-    width: 156px;
+    width: 180px;
   }
   .blomstersoter-wrapper {
     flex-direction: column;
   }
   .flowerss {
     margin-top: 20px;
+    max-width: fit-content;
     grid-template-columns: repeat(1, 1fr);
   }
   .blomstersoter-left {
