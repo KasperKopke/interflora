@@ -449,6 +449,11 @@ footer {
     max-width: 100%;
     padding: 0px 0%;
   }
+  .historie h2 {
+    font-size: 40px;
+    padding: 0;
+    padding-top: 20px;
+  }
   .historie-wrapper {
     flex-direction: column;
   }
