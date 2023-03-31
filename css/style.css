@@ -453,10 +453,10 @@ footer {
     flex-direction: column;
   }
   .blomstersoter-left img {
-    width: 301px;
+    max-width: 301px;
   }
   .blomstersoter-right img {
-    width: 180px;
+    width: 160px;
   }
   .blomstersoter-wrapper {
     flex-direction: column;
@@ -468,7 +468,8 @@ footer {
     grid-gap: 4px;
   }
   .blomstersoter-left {
-    margin-left: 32px;
+    display: flex;
+    justify-content: center;
   }
   .blomstersoter {
     padding: 0px;
@@ -535,5 +536,9 @@ footer {
   .jule-left h2 {
     max-width: 100%;
     font-size: 37px;
+  }
+  .blomstersoter-right {
+    display: flex;
+    justify-content: center;
   }
 }
